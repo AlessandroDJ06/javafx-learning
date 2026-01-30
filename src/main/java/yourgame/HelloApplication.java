@@ -1,4 +1,4 @@
-package com.example.javafxlearning;
+package yourgame;
 
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -43,7 +43,6 @@ public class HelloApplication extends Application {
         rectangle.setFill(Color.BLUE);
         rectangle.setStrokeWidth(5);
         rectangle.setStroke(Color.BLACK);
-
         root.getChildren().add(rectangle);
         root.getChildren().add(line);
         root.getChildren().add(text);
