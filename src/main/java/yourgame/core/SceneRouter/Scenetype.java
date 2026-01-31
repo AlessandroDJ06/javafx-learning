@@ -1,4 +1,4 @@
-package yourgame.core;
+package yourgame.core.SceneRouter;
 import yourgame.scenes.*;
 
 public enum Scenetype {
@@ -6,6 +6,12 @@ public enum Scenetype {
     MENU {
         public GameScene createScene(){
             return new MenuScene();
+        }
+    },
+    SETTINGS{
+        @Override
+        public GameScene createScene() {
+            return new SettingsScene();
         }
     };
 
