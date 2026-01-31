@@ -1,9 +1,9 @@
 package yourgame.scenes;
 
 import javafx.scene.Scene;
-import javafx.stage.Stage;
-import yourgame.core.Router;
+import yourgame.core.ImageRouter.ImageRouter;
+import yourgame.core.SceneRouter.Router;
 
 public interface GameScene {
-    Scene create(Router router, Stage stage);
+    Scene create(Router router,ImageRouter imageRouter);
 }

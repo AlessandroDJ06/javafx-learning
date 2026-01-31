@@ -2,13 +2,15 @@ package yourgame.main;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
-import yourgame.core.Router;
-import yourgame.core.Scenetype;
+import yourgame.core.ImageRouter.ImageRouter;
+import yourgame.core.SceneRouter.Router;
+import yourgame.core.SceneRouter.Scenetype;
 
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Router router = new Router(stage);
+        ImageRouter imageRouter = new ImageRouter();
+        Router router = new Router(stage,imageRouter);
         stage.setTitle("TestApplication");
         router.goTo(Scenetype.MENU);
     }
