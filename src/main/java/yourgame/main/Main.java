@@ -9,7 +9,7 @@ import yourgame.core.SceneRouter.Scenetype;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        ImageRouter imageRouter = new ImageRouter();
+        ImageRouter imageRouter = new ImageRouter(stage);
         Router router = new Router(stage,imageRouter);
         stage.setTitle("TestApplication");
         router.goTo(Scenetype.MENU);
