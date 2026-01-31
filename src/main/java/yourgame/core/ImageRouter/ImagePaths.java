@@ -1,7 +1,8 @@
 package yourgame.core.ImageRouter;
 
 public enum ImagePaths {
-    LOGO("/assets/images/img.png");
+    LOGO("/assets/images/img.png"),
+    BUTTON_RECTANGLE_BORDER("/assets/images/button_rectangle_border.png");
 
     private final String path;
 
