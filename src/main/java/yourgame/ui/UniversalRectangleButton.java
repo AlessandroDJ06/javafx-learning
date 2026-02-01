@@ -12,7 +12,7 @@ public class UniversalRectangleButton extends Button {
         Image image = imageRouter.getImage(ImagePaths.BUTTON_RECTANGLE_BORDER);
         ImageView backgroundImage = new ImageView(image);
         setGraphic(backgroundImage);
-        setStyle("-fx-content-display: center; -fx-text-fill: black; -fx-font-weight: bold;");
+        setStyle("-fx-content-display: center; -fx-text-fill: black; -fx-font-weight: bold;-fx-background-color: transparant");
     }
 
 }
