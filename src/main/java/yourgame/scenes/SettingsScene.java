@@ -6,10 +6,11 @@ import javafx.scene.layout.VBox;
 import yourgame.core.ImageRouter.ImageRouter;
 import yourgame.core.SceneRouter.Router;
 import yourgame.core.SceneRouter.Scenetype;
+import yourgame.ui.UniversalRectangleButton;
 
 public class SettingsScene implements GameScene{
     public Scene create(Router router, ImageRouter imageRouter){
-        Button startButton = new Button("MENU PAGE");
+        UniversalRectangleButton startButton = new UniversalRectangleButton(imageRouter,"MENU PAGE");
         startButton.setOnAction(e -> router.goTo(Scenetype.MENU));
 
         VBox layout = new VBox(20, startButton);
