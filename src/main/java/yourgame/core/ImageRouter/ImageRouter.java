@@ -6,7 +6,51 @@ import javafx.stage.Stage;
 import java.util.HashMap;
 import java.util.Objects;
 
-public class ImageRouter {
+public class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ImageRouter {
     private final HashMap<ImagePaths,Image> loadedImages;
     private final Stage stage;
 
